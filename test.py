@@ -1,17 +1,18 @@
-# Day05 while 循环：猜数字游戏
-import random
+# Day06 列表 list：成绩管理
+# 定义成绩列表
+scores = [85, 92, 78, 90, 88]
+print("所有成绩：", scores)
 
-# 随机生成1-10的数字
-target_num = random.randint(1, 10)
-print("=== 猜数字游戏（1-10）===")
+# 增
+scores.append(95)
+print("添加后：", scores)
 
-while True:
-    guess = int(input("请猜一个数字："))
+# 查
+print("最高分：", max(scores))
+print("最低分：", min(scores))
+print("平均分：", sum(scores) / len(scores))
 
-    if guess > target_num:
-        print("太大了，再试试～")
-    elif guess < target_num:
-        print("太小了，再试试～")
-    else:
-        print("恭喜你！猜对啦！")
-        break
+# 遍历
+print("\n遍历成绩：")
+for s in scores:
+    print(s)
