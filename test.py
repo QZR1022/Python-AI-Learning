@@ -1,11 +1,11 @@
-# Day03 if-elif-else 成绩判断
-score = int(input("请输入你的成绩(0-100)："))
+# Day04 for 循环：求和、打印图案
+print("1 到 100 求和：")
+sum_result = 0
+for i in range(1, 101):
+    sum_result += i
+print("结果：", sum_result)
 
-if score >= 90:
-    print("等级：优秀")
-elif score >= 80:
-    print("等级：良好")
-elif score >= 60:
-    print("等级：及格")
-else:
-    print("等级：不及格，要加油啦！")
+# 打印星星
+print("\n打印星星：")
+for i in range(1, 6):
+    print("*" * i)
