@@ -1,11 +1,11 @@
-# Day02 输入、数字运算、简易计算器
-print("=== 简易计算器 ===")
+# Day03 if-elif-else 成绩判断
+score = int(input("请输入你的成绩(0-100)："))
 
-a = float(input("请输入第一个数字："))
-b = float(input("请输入第二个数字："))
-
-print("加法：", a + b)
-print("减法：", a - b)
-print("乘法：", a * b)
-print("除法：", a / b)
-print("取余：", a % b)
+if score >= 90:
+    print("等级：优秀")
+elif score >= 80:
+    print("等级：良好")
+elif score >= 60:
+    print("等级：及格")
+else:
+    print("等级：不及格，要加油啦！")
