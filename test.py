@@ -6,6 +6,6 @@ age = 18
 print("我是：", name)
 print("年龄：", age)
 
-# 输入
+
 your_name = input("请输入你的名字：")
 print("你好，", your_name, "！一起学Python～")
